@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图片复制</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script>
+
+            $(function () {
+                $("#btn1").click(function () {
+                    $("p").clone().appendTo("body")
+                })
+            });
+
+    </script>
+</head>
+<body>
+<button id ="btn1">图片复制</button>
+<p><img src="down.gif"></p>
+
+</body>
+</html>

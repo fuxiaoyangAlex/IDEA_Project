@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>窗口</title>
+    <script src="jquery-3.3.1.min.js"></script>
+    <style>
+        #box{
+            width: 300px;
+            height: 140px;
+            border: 1px solid green;
+            margin-top:490px;
+            margin-left: 950px;
+            margin-right: 0px;
+            margin-bottom: 1px;
+            display: block;
+            background: #95bce2;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("#btn2").hide();
+            $("#btn1").click(function(){
+                $("#box").show(1000);
+                $("#btn1").hide();
+                $("#btn2").show();
+            });
+            $("#btn2").click(function(){
+                alert("移除右下角窗口！");
+                $ ("#box").hide();
+                $("#btn1").show();
+                $("#btn2").hide();
+            });
+        });
+    </script>
+</head>
+<body>
+<div id="btn">
+    <button id="btn1">open</button>
+    <button id="btn2">close</button>
+</div>
+
+<div id="box" style="display:none">
+    <button id="btn3">关闭</button>
+    <p>Hello</p>
+</div>
+</body>
+</html>

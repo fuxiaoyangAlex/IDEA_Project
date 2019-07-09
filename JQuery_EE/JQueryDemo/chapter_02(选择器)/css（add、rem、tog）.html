@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>获取、去除、切换css仰视</title>
+    　<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script>
+        $(function () {
+            $("#btn1").click(function () {
+                $("div:first").addClass("blue important")
+            });
+            $("#btn2").click(function () {
+                <!--选取元素时添加， 设置多个样式时不添加,-->
+                $("h1,p,h2").removeClass("blue")
+            });
+            $("#btn3").click(function () {
+                $("h3").toggleClass("blue important")
+            })
+        })
+    </script>
+    <style type="text/css">
+        .blue{
+            color:blue;
+        }
+        .important{
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="div1">div1元素</div>
+    <div id="div2">div2元素</div>
+
+    <h1 class="blue">标题1</h1>
+    <h2 class="blue">标题2</h2>
+    <p class="blue">这是一个段落</p>
+    <p>这是另外一个段落</p>
+    <p class="important">这是important段落</p>
+        <!--选取元素时添加， 设置多个样式时不添加,-->
+    <h3 class="blue important">用于切换的元素</h3>
+
+    <br>
+    <button id="btn1">为第一个div元素添加类</button>
+    <button id="btn2">从元素中移除</button>
+    <button id="btn3">切换</button>
+</body>
+</html>

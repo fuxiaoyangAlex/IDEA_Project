@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>添加元素</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script>
+        function aa(){
+            $(function () {
+                var $a = "<li>软件1731班</li>";
+                $("ul").append($a);
+                $("li").remove();
+            })
+        }
+        setInterval("aa()",1000);
+    </script>
+
+</head>
+<body>
+<p>This is a paragraph</p>
+<p>This is another paragraph</p>
+<ul>
+    <li>list item 1</li>
+    <li>list item 2</li>
+    <li>list item 3</li>
+</ul>
+
+<button id="btn1">Append text</button>
+<button id="btn2">Append list item</button>
+</body>
+</html>

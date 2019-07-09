@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>不同语法的使用</title>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script>
+        $(function () {
+            $("#button1").click(function () {
+                $("p#intro").hide()
+            });
+            $("#button2").click(function () {
+                $("p.intro").hide()
+            });
+            $("#button3").click(function () {
+                $(this).hide()
+            });
+            $("#button4").click(function () {
+                $("p:first").hide()
+            });
+            //	选取带有 href 属性的元素
+            $("#button5").click(function () {
+                $("[href]").hide()
+            })
+        })
+    </script>
+</head>
+<body>
+<p class="intro">这是一个class=intro的段落</p>
+<p id="intro">这是id=intro的段落</p>
+<p><a href="hide(隐藏所有元素).html">hide.html</a><p>
+
+<input type="button" id="button1" value="点击">
+<input type="button" id="button2" value="第二个按钮">
+<input type="button" id="button3" value="第三个按钮">
+<input type="button" id="button4" value="第四个按钮">
+<input type="button" id="button5" value="第五个按钮">
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script>
+        function aa() {
+            $(function () {
+                $("ul li:first").remove().appendTo("ul")
+            //    var $li = $("ul li:first").remove();
+                //$li.appendTo("ul")
+            })
+        }
+        setInterval("aa()",1000)
+    </script>
+</head>
+<body>
+
+<ul>
+    <li>HELLO</li>
+    <li>HellO</li>
+    <li>World</li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org/DTD Mapper 3.0"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.niit.dao.PersonDao">
+    <!--嵌套结果-->
+    <resultMap id="personInfo1" type="map">
+        <id property="person_id" column="person_id"/>
+        <result property="name" column="name"/>
+        <result property="age" column="age"/>
+        <result property="sex" column="sex"/>
+        <association property="card_id" javaType="idCard">
+            <id property="card_id" column="card_id" />
+            <result property="code" column="code" />
+        </association>
+    </resultMap>
+    <select id="getPersonInfById1"
+            parameterType="Integer"
+            resultMap="personInfo1">
+        select  p.*,i.* from t_person p, t_idcard i
+        where p.card_id =i.card_id and p.person_id=#{id}
+    </select>
+
+    <!--嵌套查询-->
+    <resultMap id="personInfo" type="map">
+        <id property="person_id" column="person_id"/>
+        <result property="name" column="name"/>
+        <result property="age" column="age"/>
+        <result property="sex" column="sex"/>
+        <association property="card_id" column="card_id" javaType="idCard"
+                     select="getCard"/>
+    </resultMap>
+<!--子查询-->
+    <select id="getCard"
+            parameterType="Integer" resultType="idCard">
+        SELECT *
+        FROM t_idcard
+        where card_id = #{id}
+</select>
+    <!--主查询-->
+    <select id="getPersonInfById"
+            parameterType="Integer"
+            resultMap="personInfo">
+        select *
+        from t_person
+        where person_id = #{id}
+    </select>
+
+</mapper>

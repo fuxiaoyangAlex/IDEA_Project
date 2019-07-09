@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="This is my page">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <title>Insert title here</title>
+    <style type="text/css">
+        div{
+            float:left;
+            margin-left: 30px;
+            margin-right:30px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        div dd{
+            margin:0px;
+            font-size:10pt;
+        }
+        div dd.dd_name
+        {
+            color:blue;
+        }
+        div dd.dd_city
+        {
+            color:#000;
+        }
+    </style>
+</head>
+
+<script>
+    $(function(){
+
+        function parseUrl(url){
+            if(url.indexOf("?") == -1) {
+                return {};
+            }
+            var query = url.split("?")[1];
+            var queryArr = query.split("&");
+            var obj = {};
+            queryArr.forEach(function(item){
+                var key = item.split("=")[0];
+                var value = parseInt(item.split("=")[1]);
+                obj[key] = decodeURIComponent(value);
+            });
+            return obj;
+        }
+
+        var urlMsg = parseUrl(window.location.search);
+        console.log(urlMsg);
+
+        $.post("detailsJSONServerlet",urlMsg,function(data){
+            $("center table tr #lastObj").html("");
+            var lastObj=data[0];
+            console.log(data);
+            var html=" <td id="lastObj c" width='70%' valign='top'><table><tr><td rowspan='4'>"
+            +"<img src='images/"+lastObj.picture+"' width='200' height='160'/></td></tr><tr>"
+            +"<td><B>"+lastObj.name+"</B></td></tr><tr>"
+            +"<td>产地："+lastObj.city+"</td></tr><tr>"
+            +"<td>价格："+lastObj.price+"￥</td>"
+            +"</tr> </table></td>";
+            $("#last").before(html);
+            $.each(data,function(i,value){
+                var lastHtml= "<div><dl><dt>"
+                    +"<a href='details.jsp?id=1'><img src='images/"+value.picture+"' width='120' height='90' border='1'/></a>"
+                    +"</dt>"
+                    +"<dd class='dd_name'>"+value.name+"</dd>"
+                    +"<dd class='dd_city'>产地:"+value.city+"&nbsp;&nbsp;价格:"+value.price+" ￥ </dd> "
+                    +"</dl></div>";
+                $("#last").append(lastHtml);
+            })
+        },"json");
+    })
+
+</script>
+<body>
+
+<h1>商品详情</h1>
+<hr>
+<center>
+    <table width="750" height="60" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+            <!-- 商品详情
+
+            <td width="70%" valign="top">
+               <table>
+                 <tr>
+                   <td rowspan="4"><img src="images/001.jpg" width="200" height="160"/></td>
+                 </tr>
+                 <tr>
+                   <td><B>沃特篮球鞋</B></td>
+                 </tr>
+                 <tr>
+                   <td>产地：佛山</td>
+                 </tr>
+                 <tr>
+                   <td>价格：180￥</td>
+                 </tr>
+               </table>
+            </td>
+            -->
+
+            <!-- 浏览过的商品 -->
+            <td id='last' width="30%" bgcolor="#EEE" align="center">
+                <br>
+                <b>您浏览过的商品</b><br>
+                <!-- 循环开始
+
+                <div>
+                <dl>
+                  <dt>
+                    <a href="details.jsp?id=1"><img src="images/001.jpg" width="120" height="90" border="1"/></a>
+                  </dt>
+                  <dd class="dd_name">沃特篮球鞋</dd>
+                  <dd class="dd_city">产地:佛山&nbsp;&nbsp;价格:180 ￥ </dd>
+                </dl>
+                </div>
+                -->
+                <!-- 循环结束 -->
+            </td>
+
+        </tr>
+    </table>
+</center>
+</body>
+</html>

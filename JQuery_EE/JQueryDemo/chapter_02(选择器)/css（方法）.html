@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery设置css方法</title>
+    　<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                alert("背景颜色="+$("p").css("background-color"))
+            });
+            $("#btn2").click(function () {
+               $("p").css("background-color","yellow");
+            });
+            $("#btn3").click(function () {
+               $("p").css({"background-color":"yellow","font-size":"200%"})
+            });
+            $("#btn4").click(function () {
+                //PS: 这里 :nth-child() 选择器默认以 body 作为父标签，所以 :nth-child(1) 是 <h2> </h2>。
+                //用p:nth-child()容易出错，特别当元素多的时候，所以又采用$("p").eq(N)//N是索引，从0开始
+                // alert("背景颜色="+$("p:nth-child(5)").css("background-color"))
+                alert("背景颜色="+$("p").eq(1).css("background-color"));
+                alert("背景颜色="+$("p").eq(2).css("background-color"));
+            })
+        })
+    </script>
+</head>
+<body>
+<h2>这是一个标题:</h2>
+<p style="background-color: #ff0000">这是一个段落。</p>
+<p style="background-color: #00ff00">这是一个段落。</p>
+<p style="background-color: #0000ff">这是一个段落。</p>
+<button id="btn1">返回第一个background-color</button>
+<button id="btn2">设置P元素的background-color</button>
+<button id="btn3">p元素设置多个样式</button>
+<button id="btn4">返回p元素子属性的background-color</button>
+</body>
+</html>

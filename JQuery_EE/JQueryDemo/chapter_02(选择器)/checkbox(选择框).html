@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>输出选中的多选框的个数</title>
+    <script>
+        var btn = document.getElementById("btn");
+        btn.onclick=function () {
+            var arrays= new Array();
+            var items=document.getElementById("check");
+            for(i=0; i<items.lang;i++){
+                if(items[i].checked){
+                    arrays.push(items[i].value)
+                }
+
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <!--checked 属性规定在页面加载时应该被预先选定的 input 元素。-->
+    <!--就是选择框已经✔-->
+    <input type="checkbox" value="1" name="check" checked="checked" />
+    <input type="checkbox" value="2" name="check" />
+    <input type="checkbox" value="3" name="check" checked="checked" />
+    <input type="button" value="你选中的个数" id="btn" />
+</body>
+</html>

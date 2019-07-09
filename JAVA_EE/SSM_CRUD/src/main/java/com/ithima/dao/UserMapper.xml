@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org/DTD Mapper 3.0"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ithima.dao.UserDao">
+    <!--查询用户-->
+    <!--select表示查询,它的id名称必须与DAO层接口的方法名相同,否则无法绑定-->
+    <select id="findUser" parameterType="String" resultType="com.ithima.po.User">
+        select * from t_user where user_code=#{usercode}
+                               and user_password=#{password} and user_state ='1'
+    </select>
+
+</mapper>

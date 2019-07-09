@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script>
+        $(function () {
+
+        $("#btn").click(function () {
+            $("#panel").animate(
+                {left:"+=500px"}).delay(1000);
+            $("#panel").animate(
+                {
+                    height:"200px",
+                    top:"+=50px",
+                })
+            })
+
+
+            if(!$("panel").is(":animated")){
+                $("#panel").animate({left:"+=200px"})
+                    .animate({top:"+=200px"})
+                    .delay(1000)
+                    .animate({height:"200px"})
+                    .animate({opacity:"0.2"})
+            }
+
+
+
+        });
+            $("#btn1").click(function(){
+                $("#box").animate({height:"300px"});
+            });
+            $("#btn2").click(function(){
+                $("#box").animate({height:"100px"});
+            });
+    </script>
+
+</head>
+<body>
+<input id="btn" type="button" value="移动">`
+    <div id="panel" style="width: 100px;
+    height: 100px;background-color: #FF5500;
+    position:absolute; margin:200px" ></div>
+
+<button id="btn1">Animate height</button>
+<button id="btn2">Reset height</button>
+<div id="box" style="background:#98bf21;height:100px;width:100px;margin:6px;"></div>
+
+</body>
+</html>

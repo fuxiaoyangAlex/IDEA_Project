@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图书分类</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+    <script>
+        var a = false;
+        var b = false;
+        $(document).ready(function () {
+            $('#p1').click(function () {
+                a ? $('#content').slideDown("slow") : $('#content').slideUp("slow");
+                a ? $('#p1').text('↑') : $('#p1').text('↓');
+                a ? a = false : a = true;
+            });
+            $('#p').click(function () {
+                b ? $('ul:even').show('1000') : $('ul:even').hide('1000');
+                b ? $('#p').text('简化') : $('#p').text('复杂');
+                b ? b = false : b = true;
+            })
+        });
+    </script>
+</head>
+<body>
+<div>
+    <p><b>图书分类</b></p><p id='p1'>↓</p>
+</div>
+
+<div id='content'>
+    <ul><li>小说</li><li>文艺</li><li>青春</li></ul><br />
+    <ul><li>少儿</li><li>生活</li><li>社科</li></ul><br />
+    <ul><li>管理</li><li>计算机</li><li>教育</li></ul><br />
+    <ul><li>工具书</li><li>引进版</li><li>其他类</li></ul><br /><br />
+    <p id='p'>简化</p>
+</div>
+</body>
+</html>

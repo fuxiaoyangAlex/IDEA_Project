@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="scope" class="chapter_02_springBean.com_scope.Scope" scope="singleton" />
+    <bean id="prototype" class="chapter_02_springBean.com_scope.Prototype" scope="prototype" />
+
+    <!--*************Bean的生命周期********************-->
+    <!--单例管理对象-->
+    <!--　当scope=”singleton”，即默认情况下，会在启动容器时（即实例化容器时）时实例化。
+    但我们可以指定Bean节点的lazy-init=”true”来延迟初始化bean，这时候，
+    只有在第一次获取bean时才会初始化bean，即第一次请求该bean时才初始化-->
+    <bean id="life_singleton" class="chapter_02_springBean.com_scope.LifeBean"
+          scope="singleton" init-method="init" destroy-method="destory" lazy-init="true"/>
+
+    <!--非单例管理对象-->
+    <bean id="life_prototype" class="chapter_02_springBean.com_scope.LifeBean"
+        scope="prototype" init-method="init" destroy-method="destory" />
+</beans>

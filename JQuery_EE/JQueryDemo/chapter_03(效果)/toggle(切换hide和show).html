@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>toggle的应该</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var btn = $("button");
+            btn.click(function () {
+                $("p").toggle()
+            })
+        })
+    </script>
+</head>
+<body>
+    <P>这是一个段落</P>
+    <p>这是另一个段落</p>
+    <button>隐藏/显示</button>
+</body>
+</html>

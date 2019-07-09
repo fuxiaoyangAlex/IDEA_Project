@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>微博模仿</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <style>
+        #main {
+            width: 980px;
+            margin: 0 auto;
+        }
+
+        #form_box {
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid cyan;
+        }
+
+        #comment {
+            width: 100%;
+        }
+
+        #comment_box {
+            display: none;
+            padding: 20px;
+            border: 1px solid #cdcdcd;
+        }
+
+        #send  {
+            float: right;
+            width:50px;
+            height: 30px;
+            background-color:cornflowerblue;
+            border: none;
+            border-radius:9%;
+        }
+    </style>
+    <script>
+        $(function(){
+            $('#comment').on('input propertychange',function(){
+                //输入字体时，长度改变
+                $('#count').text(140 - $('#comment').val().length);
+                //判断长度是否大于140
+                if ($('#comment').val().length>140) {
+                    $('#comment').val($('#comment').val().substr(0,140));
+                    alert('您已超过140个字');
+                }
+            });
+        });
+
+        $('#send').click(function(){
+            var $p = $('<p></p>').text($('#comment').val());
+
+            // 添加a元素
+            var $a = $('<a></a>').text('删除');
+            $a.attr('href','javascript:;');
+            $a.css('float','right');
+            $p.append($a);
+            $a.click(function(){
+                //a元素的父元素
+                $a.parent().remove();
+                //评论框隐藏(若没有元素)
+                if ($('#comment_box').children().length == 0) {
+                    $('#comment_box').hide();
+                }
+            });
+
+            if($('#comment_box').children().length == 0){
+
+                $('#comment_box').append($p);
+                $('#comment_box').show();
+            }else{
+
+                $('#comment_box').append($p);
+            }
+
+            $('#comment').val('');
+            $('#count').text('140');
+
+        });
+
+    </script>
+</head>
+<body>
+
+<div id="main">
+    <div id="form_box">
+
+        <h2>微博，分享你的快乐！</h2>
+
+        <textarea id="comment" cols="30" rows="10"></textarea>
+
+        <p>还可以输入<span id="count">140</span>个字 <button id="send">发布</button></p>
+
+    </div>
+    <div id="comment_box" >
+    </div>
+
+</div>
+</body>
+</html>

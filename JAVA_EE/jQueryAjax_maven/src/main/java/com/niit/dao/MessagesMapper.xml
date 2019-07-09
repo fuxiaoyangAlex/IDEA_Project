@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org/DTD Mapper 3.0"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.niit.dao.MessagesDao">
+
+    <insert id="insertMessages" parameterType="com.niit.entity.Messages">
+        insert into messages(user,msg)values (#{user},#{msg})
+    </insert>
+
+    <select id="findMessagesById" parameterType="java.lang.Integer"
+            resultType="com.niit.entity.Messages">
+        select * from messages where id=#{id}
+    </select>
+
+
+    <select id="getAllMessages" resultMap="MessagesMap">
+        select * from messages
+    </select>
+
+    <resultMap id="MessagesMap" type="com.niit.entity.Messages">
+        <id property="id" column="id" />
+        <result property="user" column="user" />
+        <result property="msg" column="msg" />
+    </resultMap>
+
+</mapper>

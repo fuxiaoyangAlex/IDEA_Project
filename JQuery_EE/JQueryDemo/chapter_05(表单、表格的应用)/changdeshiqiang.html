@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC" -//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>常德诗墙</title>
+
+<script type="text/javascript" src="../jquery-3.1.1.js"></script>
+<script type="text/javascript">
+/*首页广告效果*/
+$(function(){
+	var index=0;
+	var v_width=$("#slider").width();
+	var page_count=$("#show li").length;
+	var adTime=null;
+
+	$("#number li").mouseover(function(){
+		index=$(this).index();
+		imgShow(index);		
+	})
+
+     function imgShow(index){
+		if(!$("#show").is(":animated")){
+			$("#show").animate({
+				left:-index*v_width+"px"
+			},500)
+			$("#number li").eq(index).addClass("on").siblings().removeClass("on");
+		}
+	 }
+
+	$("#slider").mouseout(function(){
+		adTime=setInterval(function(){
+			imgShow(index);
+			index++;
+			if(index==page_count){index=0;} 
+		},1000)
+	}).mouseover(function(){
+		clearInterval(adTime);
+	})
+})
+
+</script>
+<link href="css/chengtoushan.css" rel="stylesheet" type="text/css" />
+<link href="css/css.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+<div id="slider">
+<ul id="show">
+	<li><img src="images/renwen/1.jpg" width="524" height="304" alt="双龙洞" /></li>
+	<li><img src="images/renwen/2.jpg" width="524" height="304" alt="双龙洞" /></li>
+	<li><img src="images/renwen/3.jpg" width="524" height="304" alt="柳叶湖" /></li>
+	<li><img src="images/renwen/4.jpg" width="524" height="304" alt="壶瓶山" /></li>
+	<li><img src="images/renwen/5.jpg" width="524" height="304" alt="壶瓶山" /></li>
+</ul>
+<ul id="number">
+	<li>1</li>
+	<li>2</li>
+	<li>3</li>
+	<li>4</li>
+	<li>5</li>
+</ul>
+</div>
+</body>
+</html>

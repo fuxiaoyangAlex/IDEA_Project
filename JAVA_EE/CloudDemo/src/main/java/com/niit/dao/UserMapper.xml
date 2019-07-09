@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org/DTD Mapper 3.0"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.niit.dao.UserDao">
+
+    <insert id="insertUser" parameterType="com.niit.pojo.User">
+        insert into tb_user(userName,userPhone,userPassword,userEmail,userSignature)
+        values (#{userName},#{userPhone},#{userPassword},#{userEmail},#{userSignature})
+    </insert>
+
+   <delete id="deleteUser" parameterType="java.lang.Integer">
+        delete from tb_user where id=#{id}
+   </delete>
+
+    <update id="updateUser" parameterType="com.niit.pojo.User">
+        update tb_user set userName=#{userName},userPhone=#{userPhone},userEmail=#{userEmail},userSignatrue=#{userSignature}
+    </update>
+
+
+    <select id="findUserById" parameterType="java.lang.Integer" resultMap="userResultMap">
+        select * from tb_user where id=#{userId}
+    </select>
+
+    <select id="findAllUser" resultMap="userResultMap">
+        select * from tb_user
+    </select>
+
+    <resultMap id="userResultMap" type="com.niit.pojo.User">
+            <id property="userId" column="userId" />
+            <result property="userName" column="userName" />
+            <result property="userPhone" column="userPhone" />
+            <result property="userPassword" column="userPassword" />
+            <result property="userEmail" column="userEmail" />
+            <result property="userSignature" column="userSignature" />
+            <!--<result property="userHeadurl" column="userHeadurl" />-->
+            <!--<result property="userUpdatetime" column="userUpdatetime" />-->
+    </resultMap>
+</mapper>

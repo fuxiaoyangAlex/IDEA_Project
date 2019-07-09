@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org/DTD Mapper 3.0"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.niit.dao.IdCardDao">
+    <!--增加操作-->
+    <insert id="insertIdCard" parameterType="idCard"
+    keyProperty="card_id" useGeneratedKeys="true">
+        insert into t_idcard(code) values (#{code})
+    </insert>
+    <!--删除操作-->
+    <delete id="deleteIdCard" parameterType="Integer">
+      delete from t_idcard where card_id=#{id }
+    </delete>
+    <!--修改操作-->
+    <update id="updateIdCard" parameterType="idCard">
+        update t_idcard set code=#{code} where card_id=#{card_id}
+    </update>
+    <!-- 查询操作-->
+    <select id="getIdCardById" parameterType="integer" resultType="idCard">
+        select * from t_idcard where card_id=#{id_card}
+    </select>
+
+    <!--获取所有信息-->
+    <select id="getAllIdCard" resultType="idCard">
+        select * from t_idcard
+    </select>
+    <!--根据Id查询-->
+    <select id="findCodeById" parameterType="Integer" resultType="IdCard">
+        select * from t_idcard WHERE id=#{card_id}
+    </select>
+</mapper>

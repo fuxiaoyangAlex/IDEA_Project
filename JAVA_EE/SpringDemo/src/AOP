@@ -1,0 +1,76 @@
+                学习目标：
+                    #了解AOP的概念和作用
+                    #了解AOP中的相关术语
+                    #了解Spring中两种动态代理方式的区别
+                    #掌握基于代理类的AOP实现
+                    #掌握基于XML和注解的AspectJ开发
+
+    -------------------------
+                             #了解AOP的概念和作用
+    #概念：AOP全称是Aspect-Oriented Programming,即面向切面编程（也称面向方面编程）
+    它是面向对象编程（OOP）的一种补充，目前已成为一种比较成熟的编程方式。
+
+    #作用：AOP采取横向抽取机制，将分散在各个方法中的重复的代码提取出来，然后在程序
+    编译或运行时，再将这些提取出来的代码应用到需要执行的地方。
+    这种采用横向抽取机制的方法，采用传统的OOP思想是显然无法办到的，因为OOP只能实现
+    父子关系的纵向的重用。虽然AOP是一种心的编程思想，但却绝不是OOP的替代品，它只是
+    OOP的延伸和补充。
+    ----------------------------
+                            #了解Spring中两种动态代理方式的区别
+    目前最流行的AOP框架有两个，分别是SpringAOP和AspectJ。
+    SpringAOP代理，可以是JDK动态代理，也可以是CGLIB代理。
+    #JDK动态代理
+    JDK动态代理是通过java.lang.reflect.Proxy类来实现的，我们可以调用Proxy类的
+    newProxyInstance()方法来创建代理对象。对于使用业务接口的类，Spring默认会
+    使用JDK动态代理来实现  该代理类实现了InvocationHandler接口
+    使用动态代理的对象必须实现一个或多个接口。如果要对没有实现接口的类进行代理，
+    那么可以使用CGLIB代理。
+    #CGLIB代理
+    CGLIB是一个高性能开源的代码生成包，对指定的目标类生成一个子类，并对子类进行增强
+    该代理类实现了MethodInterceptor接口，并实现了intercept()方法
+    像那种没有接口的代理方式，就是CGLIB代理。
+    -----------------------------------------
+                            #掌握基于代理类的AOP实现
+      实际上，Spring中的AOP代理默认就是使用JDK动态代理的方式实现的。在Spring中,使用
+      ProxyFactoryBean是创建AOP代理的最基本方式。
+      Spring中的通知按照在目标类方法的连接点位置，可以分为五种类型
+      *MethodInterceptor(环绕通知)
+      *MethodBeforAdvice(前置通知)
+      *AfterReturningAdvice(后置通知)
+      *ThrowsAdvice（异常通知）
+      *IntroductionInterceptor(引介通知)
+      ProxyFactoryBean是FactoryBean接口的实现类，FactoryBean负责实例化一个Bean,
+      而PrxoyFactoryBean负责为其它Bean创建代理实例。在Spring中，
+      使用ProxyFactoryBean是创建AOP代理的基本方式
+            ProxyFactoryBean的常用属性
+        属性名称                    描述
+         target                     代理的目标对象
+         proxyInterfaces            代理要实现的接口
+         proxyTargetClass           是否对类代理而不是接口，设置为true时，使用CGLIB代理
+         interceptorNames           需要织入目标的Advice
+         singleton                  返回的代理是否为单单例，默认为true(即返回单实例)
+      ------------------------------------------------------------
+                            #掌握基于XML和注解的AspectJ开发
+       使用AspectJ实现AOP有两种方式：一种是基于XML的声明式AspectJ,另一种是基于注解的
+       声明式AspectJ。
+
+                            通知常用属性及其描述
+       pointcut              该属性用于指定一个切入点表达式，Spring将在匹配该表达式的连接点时织入
+                             通知
+       pointcut-ref          该属性指定一个已经存在的切入点名称，如果配置代码中的myPointCut
+       method                该属性指定一个方法名，指定将切面Bean中的该方法转换为增强处理。
+       throwing              该属性只对<after-throwing>元素有效
+       returnig              该属性只对<after-retruning>元素有效
+       在AOP配置信息中,使用<aop:after-returning>配置的后置通知和使用<aop:after>配置的最终通知
+       虽然都是在目标方法执行之后执行，但是后置通知只有在目标方法成功后才会被织入
+       而最终通知不论目标方法如何结束，都会被织入
+                              AspectJ的注解及其描述
+          @Aspect                  用于一个切面
+          @Pointcut                用于定义切入点表达式。这个方法签名就是一个
+                                   返回值为void，且方法为空的普通方法
+          @Before                  定义前置通知，需要指定一个value属性值用于指定一个切入点
+          @AfterReturning          定义后置通知
+          @Around                  定义环绕通知
+          @AfterThrowing           定义异常通知来处理程序中的异常
+                                   指定value和throwing属性
+          @After                    定义最终final通知,无论是否异常，该通知都会被执行

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    　<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+    <script>
+        $(function () {
+            $("#btn1").click(function () {
+                var sum=0;
+                $("input:checkbox:checked").each(function () {
+                    sum+=parseInt(this.value);
+                });
+                $("#total").html(sum);
+            })
+        })
+    </script>
+</head>
+<body>
+<div id="box">所选食物:</div>
+<br>
+<input type="checkbox" value="20"> 汉堡 ￥20<br>
+<input type="checkbox" value="15">可乐 ￥15<br>
+<input type="checkbox" value="22">炸鸡￥22<br>
+<p>总价共计:<label id="total">0</label></p>
+<input type="button" id="btn1" value="总计">
+</body>
+</html>

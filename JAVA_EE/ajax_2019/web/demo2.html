@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    　<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+    <base href="<%=basePath%>">
+    <script>
+        window.onload = function(){
+            //获取a节点，并添加响应函数
+            document.getElementsByTagName("a")[0].onclick = function(){
+                //创建一个XmlHttpRequest文件
+                var request = new XMLHttpRequest();
+                //准备发送请求的数据，url;
+                var url = this.href;
+                var method = "GET";
+                //调用XMLHttpRequest的 open()方法
+                request.open(method,url,true);
+                //调用XMLHttpRequest的 send()方法
+                request.send(null);
+
+                //为请求添加响应函数
+                //回调函数
+                request.onreadystatechange = function(){
+                    if(request.readyState == 4){
+                        if(request.status == 200 || request.status == 304){
+                            alert(request.responseText);
+                        }
+                    }
+                };
+                //取消a节点的默认行为
+                return false ;
+            }
+        }
+    </script>
+</head>
+<body>
+<button>Ajax提交</button>
+ <a href="getOut.jsp"></a>
+<div id="resText"></div>
+</body>
+</html>

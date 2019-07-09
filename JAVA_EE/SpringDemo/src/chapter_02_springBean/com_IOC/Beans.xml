@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="phone1" class="chapter_02_springBean.com_IOC.Phone">
+        <property name="brand" value="小米"></property>
+        <property name="color" value="白色"></property>
+    </bean>
+
+    <bean id="phone2" class="chapter_02_springBean.com_IOC.Phone">
+        <property name="brand" value="华为"></property>
+        <property name="color" value="黑色"></property>
+    </bean>
+
+    <bean id="stu1" class="chapter_02_springBean.com_IOC.Stu">
+        <property name="name" value="张三"></property>
+        <property name="gender" value="男"></property>
+        <property name="phone" ref="phone1"></property>
+        <property name="hobby">
+            <list>
+                <value>听歌</value>
+                <value>看书</value>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="stu2" class="chapter_02_springBean.com_IOC.Stu">
+        <property name="name" value="小花"></property>
+        <property name="gender" value="女"></property>
+        <property name="phone" ref="phone2"></property>
+        <property name="hobby">
+            <list>
+                <value>看小说</value>
+                <value>背英语</value>
+            </list>
+        </property>
+    </bean>
+    <bean id="group" class="chapter_02_springBean.com_IOC.Group">
+        <property name="theme" value="关于自己的介绍"></property>
+        <property name="list">
+            <list>
+                <ref bean="stu1"></ref>
+                <ref bean="stu2"></ref>
+            </list>
+        </property>
+    </bean>
+</beans>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+ <link rel="stylesheet" type="text/css" href="css/weather.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+    <script>
+        $(function () {
+
+            $("#search").click(function () {
+                $.getJSON("http://api.map.baidu.com/telematics/v3/weather?output=json&json&ak=H7W5CxI0BPzKtwGcBHmpGPAz50xP1Qjw&location="+$("#input-weather").val()+" &allback=?",
+                    function (data) {
+                        if (data.result=null&&data.result!=''){
+                            getData(data)
+                        }else {
+                            //查询不到城市
+                            $(".place").text("查询不到"+$("#input-weather").val()+"的天气情况，请重输！");
+                            //清空查询结果
+                            $(".date,.weather-mess span,.warmtips div span,.warmtips div p").text("");
+                            //清空查询框
+                            $("#input-weather").val("")
+                        }
+                    })
+            });
+            function getData(data) {
+                $(".data").text(data.results[0].weather_data[0].data);
+                $(".place").text(data.result[0].currentCity);
+
+                var healthIndex=data.result[0].index;
+                $.each(healthIndex,function (index,value) {
+                    if(index<5){
+                        $(".warmtips div").eq(index).find("span").text(value.tipt);
+                        $(".warmtips div").eq(index).find("p").text(value);
+
+                    }
+                })
+            }
+        })
+    </script>
+
+</head>
+<body>
+<nav class="navbar">
+    <hearder class="title">天气查询</hearder>
+    <div class="dialog">
+        <div class="input-dialog">
+            <input type="text" name="input-weather" id="input-weather" placeholder="请输入要查询的城市名称">
+        </div>
+        <div class="search-btn">
+            <button id="search">查询</button>
+        </div>
+    </div>
+</nav>
+
+<article class="mainbody">
+    <section class="date-place">
+        <div class="date">
+        </div>
+        <div class="place"></div>
+    </section>
+    <section class="today-weather">
+        <div class="weather-condition">
+            <div class="weather-mess">
+                <span></span><BR/>
+                <span></span><BR/>
+                <span></span><BR/>
+                <span></span>
+            </div>
+        </div>
+        <div class="warmtips">
+            <header>温馨提示</header>
+            <div>
+                <span></span>
+                <p></p>
+            </div>
+            <div>
+                <span></span>
+                <p></p>
+            </div>
+            <div>
+                <span></span>
+                <p></p>
+            </div>
+            <div>
+                <span></span>
+                <p></p>
+            </div>
+            <div>
+                <span></span>
+                <p></p>
+            </div>
+        </div>
+    </section>
+</article>
+</body>

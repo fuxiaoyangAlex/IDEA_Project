@@ -1,0 +1,30 @@
+<component name="libraryTable">
+  <library name="Spring" type="spring">
+    <CLASSES>
+      <root url="jar://D:/OpenSources/jarPackage/springJar/lib004/mybatis-3.5.0/mybatis-3.5.0.jar!/" />
+      <root url="jar://D:/OpenSources/jarPackage/springJar/lib004/ant-1.10.5.jar!/" />
+      <root url="jar://D:/OpenSources/jarPackage/springJar/lib004/ant-launcher-1.10.5.jar!/" />
+      <root url="jar://D:/OpenSources/jarPackage/springJar/lib004/asm-7.1.jar!/" />
+      <root url="jar://D:/OpenSources/jarPackage/springJar/lib004/cglib-3.2.10.jar!/" />
+      <root url="jar://D:/OpenSources/jarPackage/springJar/lib004/commons-logging-1.2.jar!/" />
+      <root url="jar://D:/OpenSources/jarPackage/springJar/lib004/druid-1.1.14.jar!/" />
+      <root url="jar://D:/OpenSources/jarPackage/springJar/lib004/hamcrest-core-1.3.jar!/" />
+      <root url="jar://D:/OpenSources/jarPackage/springJar/lib004/javassist-3.24.1-GA.jar!/" />
+      <root url="jar://D:/OpenSources/jarPackage/springJar/lib004/javax.persistence-api-2.2.jar!/" />
+      <root url="jar://D:/OpenSources/jarPackage/springJar/lib004/junit-4.12.jar!/" />
+      <root url="jar://D:/OpenSources/jarPackage/springJar/lib004/log4j-1.2.17.jar!/" />
+      <root url="jar://D:/OpenSources/jarPackage/springJar/lib004/log4j-api-2.11.0.jar!/" />
+      <root url="jar://D:/OpenSources/jarPackage/springJar/lib004/log4j-core-2.11.0.jar!/" />
+      <root url="jar://D:/OpenSources/jarPackage/springJar/lib004/mybatis-3.5.0.jar!/" />
+      <root url="jar://D:/OpenSources/jarPackage/springJar/lib004/mybatis-3.5.0.zip!/" />
+      <root url="jar://D:/OpenSources/jarPackage/springJar/lib004/mysql-connector-java-6.0.5-bin.jar!/" />
+      <root url="jar://D:/OpenSources/jarPackage/springJar/lib004/ognl-3.2.10.jar!/" />
+      <root url="jar://D:/OpenSources/jarPackage/springJar/lib004/persistence-api-1.0.2.jar!/" />
+      <root url="jar://D:/OpenSources/jarPackage/springJar/lib004/slf4j-api-1.7.25.jar!/" />
+      <root url="jar://D:/OpenSources/jarPackage/springJar/lib004/slf4j-log4j12-1.7.25.jar!/" />
+      <root url="jar://D:/OpenSources/jarPackage/springJar/lombok-1.18.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

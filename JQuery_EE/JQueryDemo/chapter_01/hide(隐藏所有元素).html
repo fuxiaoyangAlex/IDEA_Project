@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>*的用法</title>
+    <script src="jquery-3.3.1.min.js" ></script>
+    <script>
+        $(function() {
+            $("#button1").click(function(){
+                $("*").hide()
+            })
+        })
+    </script>
+</head>
+<body>
+    <p>这是一个P标签</p>
+    <p>这是另一个p标签</p>
+    <p id="a">这是一个id=a的p标签</p>
+    <p class="b">这是一个class=b的p标签</p>
+    <input type="button" id="button1" value="点击">
+</body>
+</html>

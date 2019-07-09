@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>层次选择器(换肤)</title>
+    <style type="text/css">
+        input{
+            margin:5px;  /*设置Input元素的外边距为5像素*/
+        }
+
+       .input{
+           font-size:16px;/*设置字体大小*/
+           color:#FF5500;/*设置字体颜色*/
+           background-color:yellow;/*设置背景颜色*/
+           border: 1px; solid-color: #000000;/*设置边框*/
+       }
+    </style>
+        
+    <script src="jquery-3.3.1.min.js"></script>
+    <script>
+        $(function () {
+            $("#change").click(function () {
+                $("input").addClass("input");
+            });
+            $("#default").click(function(){
+                $("input").removeClass("input");
+            });
+
+        })
+    </script>
+</head>
+<body>
+    <form id="form1" name="form1" method="post" action="">
+        姓名:
+        <input type="text" name="name" id="name" /><br/>
+        籍贯:<input type="text" name="native" id="native"><br/>
+        生日:<input type="text" name="birthday" id="birthday" />
+        <BR>
+        E-mail:<input type="text" name="email" id="email" />
+        <br>
+        <span>
+        <input type="button" name="change" id="change" value="换肤">
+        </span>
+        <span>
+        <input type="button" name="default" id="default" value="恢复默认">
+        </span>
+    </form>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    　<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+    <script>
+        $(function () {
+            $("#btn1").click(function () {
+                var sum=0;
+                $("input:checkbox:checked").each(function () {
+                    sum+=parseInt(this.value);
+                });
+                $("#total").html(sum).show();
+            })
+        })
+    </script>
+    <style>
+        .div1{
+            height:100px;
+            width: 150px;
+            background-color:#dae2d0;
+            /*border:4px;*/
+            /*设置div边框的宽度，样式，颜色以及透明度*/
+            border:3px solid rgba(82,53,52,0.1);
+        }
+    </style>
+</head>
+<body>
+<div id="box">选择你要买的书本:</div>
+<br>
+    <input type="checkbox" value="50"> Java编程思想 ￥50<br>
+    <input type="checkbox" value="45">JavaWeb应用 ￥45<br>
+    <input type="checkbox" value="20">css权威指南￥20<br>
+<div class="div1" id="total"   hidden="hidden">
+
+</div>
+    <!--<p>总价共计:<label id="total">0</label></p>-->
+
+<input type="button" id="btn1" value="总计">
+</body>
+</html>

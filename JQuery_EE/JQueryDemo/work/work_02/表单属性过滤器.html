@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单属性过滤器</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+
+            $("button[type='reset']").click(function () {
+
+                //    change()函数只适用于表单函数
+                    $("checkbox").change();
+            });
+            //    全选操作
+            var btn1=$("#btn1");
+            btn1.click(function () {
+                $(":checkbox").prop("checked","true")
+            });
+            //反选操作
+            var btn2=$("#btn2");
+            btn2.click(function () {
+                $(":checkbox").each(function () {
+                    //输出信息
+                     console.log(this.checked);
+                     this.checked =!this.checked;
+
+                });
+            });
+
+            var str ="";
+            var btn3=$("#btn3");
+            btn3.click(function () {
+                $(":checkbox:checked").each(function () {
+                    /*val() 方法返回或设置被选元素的值。
+                     元素的值是通过 value 属性设置的。该方法大多用于 input 元素。
+                    如果该方法未设置参数，则返回被选元素的当前值。*/
+                    str+=$(this).val()+".";
+                });
+                $("#export").html(str)
+            })
+
+        })
+    </script>
+</head>
+<body>
+<form action="#" name="form">
+多选框:
+    <input type="checkbox"  value="11" >11
+    <input type="checkbox"  value="12" >12
+    <input type="checkbox"  value="13" >13
+    <p id="export">所选结果:</p>
+<button id="btn1">全选</button>
+<button id="btn2">反选</button>
+<button type="reset">取消</button>
+<button id="btn3">输出</button>
+</form>
+</body>
+</html>

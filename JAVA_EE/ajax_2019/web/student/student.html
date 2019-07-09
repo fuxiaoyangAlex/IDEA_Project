@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script>
+        $(function () {
+            $("#stucode").blur(function () {
+                $.get("stuData.jsp",{
+                    stucode:$("#stucode").val()
+                },function (data) {
+                    var name=$(data).find("name").text();
+                    var classname=$(data).find("classname").text();
+                    $("#name").val(name);
+                    $("#classname").val(classname);
+                })
+            })
+        })
+
+    </script>
+</head>
+
+<body>
+<h2>输入学号</h2>
+学号:<input type="text" id="stucode" name="stucode"><br>
+姓名:<input type="text" id="name" name="name"><br>
+班级:<input type="text" id="classname" name="classname">
+</body>
+</html>

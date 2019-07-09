@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>邮箱地址</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+    <script>
+        $(function () {
+            // $("#address").focus(function () { //地址获取鼠标焦点
+            //     var text_value = $(this).val();//获取邮箱地址
+            //     if(text_value==this.defaultValue){
+            //         $(this).val("");
+            //     }
+            // });
+            //
+            // $("#address").blur(function () { //地址失去鼠标焦点
+            //     var text_value=$(this).val();
+            //     if(text_value==""){
+            //         $(this).val(this.defaultValue)
+            //     }
+            // });
+            // $("#password").focus(function () {
+            //     var text_value = $(this).val();//获取邮箱地址
+            //     if(text_value=="请输入邮箱密码"){
+            //         $(this).val("");
+            //     }
+            // });
+            //
+            // $("#password").blur(function () {
+            //     var text_value=$(this).val();
+            //     if(text_value==""){
+            //         $(this).val("请输入邮箱密码")
+            //     }
+            // })
+            $("input[type='text']").focus(function () {
+                if($(this).val()==this.defaultValue){
+                    $(this).val("");
+                }
+            }).blur(function () {
+                if($(this).val()==""){
+                    this.value=this.defaultValue;
+                }
+            })
+
+        })
+    </script>
+</head>
+<body>
+<input type="text" id="address" value="请输入邮箱地址"/>   <br/><br/>
+<input type="text" id="password" value="请输入邮箱密码"/>  <br/><br/>
+<input type="button" value="登陆"/>
+</body>
+</html>
+

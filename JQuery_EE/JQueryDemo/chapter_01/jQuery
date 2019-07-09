@@ -1,0 +1,12 @@
+
+
+      选取某个标签的按钮的第一个时：
+       $("#button4").click(function () {
+                      $("p:first").hide()
+                  });
+
+     选取连接按钮：
+     <p><a href="hide(隐藏所有元素).html">hide.html</a><p>
+        $("#button5").click(function () {
+                     $("[href]").hide()
+                 })

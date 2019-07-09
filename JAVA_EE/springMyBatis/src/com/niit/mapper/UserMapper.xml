@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org/DTD Mapper 3.0"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.niit.dao.UserDao">
+<!--嵌套结果-->
+    <!--<resultMap id="userWithOrdersResult" type="map">-->
+        <!--<id property="user_id" column="user_id" />-->
+        <!--<result property="username" column="username" />-->
+        <!--<result property="address" column="address" />-->
+        <!--&lt;!&ndash;实现一对多的映射&ndash;&gt;-->
+        <!--<collection property="orders"-->
+                    <!--javaType="arrayList" ofType="orders">-->
+            <!--<id property="order_id" column="order_id" />-->
+            <!--<result property="number" column="number" />-->
+        <!--</collection>-->
+    <!--</resultMap>-->
+    <!--具体查询-->
+    <!--<select id="findUserWithOrders"-->
+            <!--parameterType="Integer" resultMap="userWithOrdersResult">-->
+        <!--select u.*, o.* from tb_user u,tb_orders o-->
+        <!--where u.user_id = o.order_id and u.user_id=#{id}-->
+    <!--</select>-->
+
+    <!--嵌套查询-->
+    <resultMap  id="findUserWithOrders1" type="map">
+        <id property="user_id" column="user_id" />
+        <result property="username" column="username" />
+        <result property="address" column="address" />
+        <collection property="ordersList" column="user_id"
+                    ofType="orders" select="getOrders" />
+    </resultMap>
+    <!--子查询-->
+    <select id="getOrders" parameterType="Integer" resultType="orders">
+        select * from tb_orders where order_id =#{id}
+    </select>
+    <!--主查询-->
+    <select id="findUserWithOrders1"
+            parameterType="Integer"
+            resultMap="findUserWithOrders1">
+        select * from tb_user where user_id=#{id}
+    </select>
+</mapper>

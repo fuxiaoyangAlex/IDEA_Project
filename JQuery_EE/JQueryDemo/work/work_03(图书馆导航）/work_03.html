@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图书馆分层</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <style type="text/css">
+        body{ font-size:18px;
+            color:#ff9e77;
+        }
+        #divFrame{width:360px; height:180px; border:solid 1px #eee;}
+
+        ul{
+            background-color:#00ff00;
+            list-style-type:none; padding:0px;}
+        ul li{
+            /*color:#d5d4ff;*/
+            float:left; width:100px; height:20px;}
+        #divHeader{ width:360px; height:30px; background-color:#dae2d0; float:left; margin:0px; padding:0px;}
+        #divHeader h3{
+            float:left; padding:0px; margin:0px;}
+        #divHeader span{ float:right;}
+        #divContent{ width:360px; height:150px;adding:3px; margin:2px;}
+        #divBot{ float:right; margin-top:30px; padding:3px;}
+    </style>
+    <script>
+        $(function () {
+            //挂起事件
+            $('#divHeader span').click(function () {
+                if ($('#divContent').is(':visible')) {
+                    $('#divHeader span').text('展开');
+                    //$('#divContent').hide(2000);
+                    $('#divContent').css('display', 'none');
+                }
+                else {
+                    $('#divHeader span').text('收起');
+                    $('#divContent').show(500);
+                }
+            });
+
+            //给"简化"加单击事件
+            $('#divBot span>a').click(function () {
+                if ($('#divBot span>a').text() == '简化') {
+                    $('#divBot span>a').text('更多...');
+                    $('li:gt(5)').hide(500);
+                } else {
+                    $('#divBot span>a').text('简化');
+                    $('li:gt(3)').show(500);
+                }
+            })
+        })
+    </script>
+</head>
+<body>
+<form id="form1" runat="server">
+    <center>
+    <div id="divFrame">
+        <div id="divHeader">
+            <h3>图书分类</h3>
+            <span>挂起</span></div>
+        <div id="divContent">
+            <ul>
+                <li><a href="#">小说<i>(2300)</i></a></li>
+                <li><a href="#">文艺<i>(4100)</i></a></li>
+                <li><a href="#">青春<i>(1930)</i></a></li>
+                <li><a href="#">少儿<i>(1300)</i></a></li>
+                <li><a href="#">生活<i>(2150)</i></a></li>
+                <li><a href="#">社科<i>(1450)</i></a></li>
+                <li><a href="#">地理<i>(4200)</i></a></li>
+                <li><a href="#">计算机<i>(300)</i></a></li>
+                <li><a href="#">教育<i>(2400)</i></a></li>
+                <li><a href="#">自然<i>(1300)</i></a></li>
+                <li><a href="#">生物<i>(1340)</i></a></li>
+                <li><a href="#">工具书<i>(350)</i></a></li>
+            </ul>
+            <div id="divBot">
+                <span><a href="#">简化</a></span></div>
+        </div>
+    </div>
+    </center>
+</form>
+</body>
+</html>

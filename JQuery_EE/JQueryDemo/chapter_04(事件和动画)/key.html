@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>www.jb51.net jQuery控制div移动</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script>
+
+        $(document).keyup(function(event){
+                var key = event.which;  //获取键值
+                var Item = $('#switch');  //要移动的元素
+                Item.css({position:'relative'}); //设置position
+                switch(key){  //判断按键
+                    case 37: Item.animate({left:'-=20px'});break;
+                    case 38: Item.animate({top:'-=20px'});break;
+                    case 39: Item.animate({left:'+=20px'});break;
+                    case 40: Item.animate({top:'+=20px'});break;
+                    default:
+                        break;
+                }
+        });
+    </script>
+</head>
+<body>
+<div id="switch" style="width:200px;height:200px;border:solid 1px #000;background-color: violet">
+</div>
+
+</body>
+</html>

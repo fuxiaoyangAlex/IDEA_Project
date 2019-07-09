@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>页面字体大小的改变</title>
+    　<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script>
+            $(function () {
+                $("#big").click(function () {
+                    var s_size=$(".font_size").css("font-size"),s_number = parseFloat(s_size);
+                    if(s_number<30)
+                    {
+                        var newSize = s_number +2;
+                        $(".font_size").css("font-size", newSize);
+                    }
+                    else
+                        return false;
+                });
+                $("#little").click(function () {
+                    var s_size = $(".font_size").css("font-size"),s_number = parseFloat(s_size);
+                    if(s_number>14)
+                    {
+                        var newSize = s_number -2;
+                        $(".font_size").css("font-size", newSize);
+                    }
+                    else
+                        return false;
+                });
+            })
+    </script>
+
+</head>
+<body>
+<div class="font_size">改变字体大小</div>
+<button id="big">增大</button>
+<button id="little">减小</button>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <beans xmlns="http://www.springframework.org/schema/beans"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:context="http://www.springframework.org/schema/context"
+           xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/cache http://www.springframework.org/schema/cache/spring-cache.xsd http://www.alibaba.com/schema/stat http://www.alibaba.com/schema/stat.xsd">
+
+    <!--<properties resource="jdbc.properties"/>-->
+
+    <context:property-placeholder location="classpath:jdbc.properties" />
+    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource"
+          init-method="init" destroy-method="close">
+        <property name="driverClassName" value="${jdbc.driverClassName}" />
+        <property name="url" value="${jdbc.url}" />
+        <property name="username" value="${jdbc.username}" />
+        <property name="password" value="${jdbc.password}" />
+        <!--设置初始化大小-->
+        <property name="initialSize" value="20" />
+        <!--设置连接池最多连接数量-->
+        <property name="maxActive" value="20" />
+        <!--设置连接池最小空间-->
+        <property name="minIdle" value="0" />
+        <!--设置最大等待时间-->
+        <property name="maxWait" value="600000" />
+        <!--设置连接池最小生存空间-->
+        <property name="minEvictableIdleTimeMillis" value="600000" />
+        <!--打开缓存-->
+        <property name="poolPreparedStatements" value="true" />
+        <!--设置缓存大小-->
+        <property name="maxPoolPreparedStatementPerConnectionSize" value="20" />
+    </bean>
+
+    <!--配置MaBatis的-->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean" >
+        <!--指定数据源-->
+        <property name="dataSource" ref="dataSource" />
+        <!--指定映射文件-->
+        <property name="mapperLocations" value="classpath*:/com/niit/mapper/*.xml" />
+        <!--给实体类指定别名-->
+        <property name="typeAliasesPackage" value="com.niit.domain" />
+    </bean>
+    <!--配置Dao接口所在的包-->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory" />
+        <property name="basePackage">
+            <value>com.niit.dao</value>
+        </property>
+    </bean>
+    <!--&lt;!&ndash;配置事务管理&ndash;&gt;-->
+    <bean id="transactionManager"
+          class="org.springframework.jdbc.datasource.DataSourceTransactionManager"
+    p:dataSource-ref="dataSource" />
+
+    <!--配置声明式事务，在使用时添加@Tansaction-->
+    <!--<tx:annotation-driven transaction-manager="transactionManager"-->
+    <!--proxy-target-class="true" />-->
+
+    <!--扫描含有注解的包-->
+    <context:component-scan base-package="com.niit.service" />
+</beans>

@@ -1,0 +1,1168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5877e1a0-4a5f-445a-af0c-0a408650713b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../MavenTest2/.idea/artifacts/MavenTest2_Web_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MavenTest2/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MavenTest2/MavenTest2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MavenTest2/src/main/java/com/niit/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MavenTest2/src/main/webapp/dfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MavenTest2/src/main/webapp/faces-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MavenTest2/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM_01/.idea/artifacts/SSM_01_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM_01/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM_01/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM_01/.idea/libraries/aopalliance_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM_01/.idea/libraries/commons_dbcp_1_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM_01/.idea/libraries/druid_1_1_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM_01/.idea/libraries/junit_4_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM_01/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM_01/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM_01/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM_01/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM_01/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM_01/SSM_01.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM_01/src/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM_01/src/com/ithima/controller/CustomerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM_01/src/com/ithima/controller/SecondController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM_01/src/com/ithima/dao/CustomerDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM_01/src/com/ithima/po/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM_01/src/com/ithima/service/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM_01/src/com/ithima/service/impl/CustomerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM_01/src/jdbc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM_01/src/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM_01/src/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM_01/src/springmvc-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM_01/web/WEB-INF/jsp/customer.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM_01/web/WEB-INF/jsp/second.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM_01/web/WEB-INF/lib/aopalliance-1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM_01/web/WEB-INF/lib/aspectjrt-1.9.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM_01/web/WEB-INF/lib/aspectjweaver-1.9.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM_01/web/WEB-INF/lib/commons-dbcp-1.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM_01/web/WEB-INF/lib/commons-fileupload-1.3.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM_01/web/WEB-INF/lib/commons-io-2.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM_01/web/WEB-INF/lib/commons-logging-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM_01/web/WEB-INF/lib/commons-pool-1.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM_01/web/WEB-INF/lib/druid-1.1.12-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM_01/web/WEB-INF/lib/druid-1.1.12.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM_01/web/WEB-INF/lib/druid-1.1.14.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM_01/web/WEB-INF/lib/hamcrest-core-1.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM_01/web/WEB-INF/lib/jackson-annotations-2.9.8.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM_01/web/WEB-INF/lib/jackson-core-2.9.8.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM_01/web/WEB-INF/lib/jackson-databind-2.9.8.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM_01/web/WEB-INF/lib/jackson-mapper-asl-1.9.13.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM_01/web/WEB-INF/lib/junit-4.10.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM_01/web/WEB-INF/lib/junit-4.12-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM_01/web/WEB-INF/lib/junit-4.12.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM_01/web/WEB-INF/lib/log4j-1.2.17.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM_01/web/WEB-INF/lib/lombok-1.18.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM_01/web/WEB-INF/lib/lombok-1.18.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM_01/web/WEB-INF/lib/mapper-4.1.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM_01/web/WEB-INF/lib/mybatis-3.5.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM_01/web/WEB-INF/lib/mybatis-spring-2.0.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM_01/web/WEB-INF/lib/mysql-connector-java-6.0.5-bin.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM_01/web/WEB-INF/lib/persistence-api-1.0.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM_01/web/WEB-INF/lib/slf4j-api-1.7.25.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM_01/web/WEB-INF/lib/slf4j-log4j12-1.7.25.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM_01/web/WEB-INF/lib/spring-aop-5.1.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM_01/web/WEB-INF/lib/spring-aspects-5.1.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM_01/web/WEB-INF/lib/spring-beans-5.1.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM_01/web/WEB-INF/lib/spring-context-5.1.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM_01/web/WEB-INF/lib/spring-context-support-5.1.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM_01/web/WEB-INF/lib/spring-core-5.1.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM_01/web/WEB-INF/lib/spring-expression-5.1.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM_01/web/WEB-INF/lib/spring-instrument-5.1.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM_01/web/WEB-INF/lib/spring-jcl-5.1.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM_01/web/WEB-INF/lib/spring-jdbc-5.1.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM_01/web/WEB-INF/lib/spring-jms-5.1.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM_01/web/WEB-INF/lib/spring-orm-5.1.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM_01/web/WEB-INF/lib/spring-test-5.1.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM_01/web/WEB-INF/lib/spring-tx-5.1.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM_01/web/WEB-INF/lib/spring-web-5.1.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM_01/web/WEB-INF/lib/spring-webmvc-5.1.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM_01/web/WEB-INF/lib/taglibs-standard-compat-1.2.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM_01/web/WEB-INF/lib/taglibs-standard-impl-1.2.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM_01/web/WEB-INF/lib/taglibs-standard-jstlel-1.2.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM_01/web/WEB-INF/lib/taglibs-standard-spec-1.2.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM_01/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM_CRUD/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM_CRUD/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM_CRUD/src/main/resources/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM_CRUD/src/main/resources/jdbc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM_CRUD/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM_CRUD/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/.idea/artifacts/SpringTest_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/.idea/artifacts/springweb_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/.idea/libraries/Spring_4_3_18_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/.idea/libraries/aopalliance_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/.idea/libraries/aspectjrt_1_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/.idea/libraries/aspectjweaver_1_8_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/.idea/libraries/commons_dbcp_1_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/.idea/libraries/junit_4_12_sources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/.idea/libraries/lombok_1_18_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/.idea/libraries/mysql_connector_java_5_1_18_bin.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/.idea/libraries/spring_aop_5_1_5_RELEASE_javadoc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/.idea/libraries/spring_aop_5_1_5_RELEASE_sources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/.idea/libraries/spring_jdbc_5_1_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/AOP" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/chapter_02_springBean/com_IOC/Beans.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/chapter_02_springBean/com_IOC/Group.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/chapter_02_springBean/com_IOC/Phone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/chapter_02_springBean/com_IOC/Stu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/chapter_02_springBean/com_IOC/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/chapter_02_springBean/com_JUnit/Beans.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/chapter_02_springBean/com_JUnit/Pet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/chapter_02_springBean/com_JUnit/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/chapter_02_springBean/com_JUnit/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/chapter_02_springBean/com_annotation/AnnotationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/chapter_02_springBean/com_annotation/Bean6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/chapter_02_springBean/com_annotation/StrudentTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/chapter_02_springBean/com_annotation/StuController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/chapter_02_springBean/com_annotation/StuDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/chapter_02_springBean/com_annotation/StuDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/chapter_02_springBean/com_annotation/StuService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/chapter_02_springBean/com_annotation/StuServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/chapter_02_springBean/com_annotation/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/chapter_02_springBean/com_annotation/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/chapter_02_springBean/com_annotation/UserDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/chapter_02_springBean/com_annotation/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/chapter_02_springBean/com_annotation/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/chapter_02_springBean/com_assemble/AssembleTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/chapter_02_springBean/com_assemble/Bean5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/chapter_02_springBean/com_assemble/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/chapter_02_springBean/com_assemble/CarTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/chapter_02_springBean/com_assemble/Phone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/chapter_02_springBean/com_assemble/PhoneTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/chapter_02_springBean/com_assemble/StuPhone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/chapter_02_springBean/com_assemble/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/chapter_02_springBean/com_assemble/StudentTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/chapter_02_springBean/com_assemble/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/chapter_02_springBean/com_automatic/AutoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/chapter_02_springBean/com_automatic/Beans.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/chapter_02_springBean/com_automatic/SpellChecker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/chapter_02_springBean/com_automatic/TextEditor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/chapter_02_springBean/com_instance/Bean1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/chapter_02_springBean/com_instance/InstanceTest1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/chapter_02_springBean/com_instance/beans1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/chapter_02_springBean/com_instance_factory/Bean3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/chapter_02_springBean/com_instance_factory/Car3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/chapter_02_springBean/com_instance_factory/InstanceTest3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/chapter_02_springBean/com_instance_factory/MyBean3Factory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/chapter_02_springBean/com_instance_factory/MyCar3Factory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/chapter_02_springBean/com_instance_factory/beans3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/chapter_02_springBean/com_scope/Bean4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/chapter_02_springBean/com_scope/LifeBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/chapter_02_springBean/com_scope/LifeTes2_类型为prototype.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/chapter_02_springBean/com_scope/LifeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/chapter_02_springBean/com_scope/Prototype.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/chapter_02_springBean/com_scope/PrototypeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/chapter_02_springBean/com_scope/Scope.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/chapter_02_springBean/com_scope/ScopeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/chapter_02_springBean/com_static_factory/Bean2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/chapter_02_springBean/com_static_factory/InstanceTest2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/chapter_02_springBean/com_static_factory/MyBean2Factory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/chapter_02_springBean/com_static_factory/beans2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/chapter_03_springAOP/com_itheima_cglib/CglibProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/chapter_03_springAOP/com_itheima_cglib/CglibTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/chapter_03_springAOP/com_itheima_cglib/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/chapter_03_springAOP/com_itheima_jdk/JdkProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/chapter_03_springAOP/com_itheima_jdk/JdkTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/chapter_03_springAOP/com_itheima_jdk/MyAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/chapter_03_springAOP/com_itheima_jdk/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/chapter_03_springAOP/com_itheima_jdk/UserDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/chapter_03_springAOP/com_itheima_jdk/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/chapter_03_springAOP/com_itheima_jdk/factorybean/MyAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/chapter_03_springAOP/com_itheima_jdk/factorybean/ProxyFactoryBeanTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/chapter_03_springAOP/com_niit_aop/Hello.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/chapter_03_springAOP/com_niit_aop/HelloImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/chapter_03_springAOP/com_niit_aop/MyBeforAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/chapter_03_springAOP/com_niit_aop/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/chapter_03_springAOP/com_niit_staticProxy/Animal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/chapter_03_springAOP/com_niit_staticProxy/AnimalCGLIBProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/chapter_03_springAOP/com_niit_staticProxy/AnimalJDKProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/chapter_03_springAOP/com_niit_staticProxy/AnimalStaticProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/chapter_03_springAOP/com_niit_staticProxy/Dog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/chapter_03_springAOP/com_niit_staticProxy/Master.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/chapter_03_springAOP/com_niit_staticProxy/MyAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/chapter_4_SpringJDBC/JDBC" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/chapter_4_SpringJDBC/com/jdbc/util/JDBCUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/com/itheima/ioc/TestDI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/com/itheima/ioc/TestIoC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/com/itheima/ioc/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/com/itheima/ioc/UserDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/com/itheima/ioc/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/com/itheima/ioc/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/com_annotation/AnnotationIoCBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/com_annotation/AnnotationIocBeanTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/com_annotation/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/com_annotation/beans.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/myself/mainBeans.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/myself/testJUnit/Pet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/myself/testJUnit/Test_JUnit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/work/JDBC/InsertPoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/work/JDBC/TestJDBC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/work/JDBC/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/work/JDBC/UserDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/work/com/niit/AOP/GreeAroundAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/work/com/niit/AOP/GreetAfterAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/work/com/niit/AOP/GreetBeforeAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/work/com/niit/AOP/GreetingAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/work/com/niit/AOP/NativeWaiter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/work/com/niit/AOP/TestDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/work/com/niit/AOP/Waiter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/work/com/niit/AOP/WaiterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/work/com/niit/Annotion/GreetingAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/work/com/niit/Annotion/NativeWaiter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/work/com/niit/Annotion/Waiter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/work/com/niit/Annotion/WaiterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/work/concert/Audience.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/work/concert/TestConcert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/work/concert/performDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/work/concert/performanceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/work/concertAnnotation/Audience2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/work/concertAnnotation/TestPerform2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/work/concertAnnotation/performDao2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/src/work/concertAnnotation/performanceImpl2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/test/chapter_02_springBean/com_JUnit/StudentTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/test/chapter_03_springAOP/com_niit_aop/HelloTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/test/chapter_03_springAOP/com_niit_staticProxy/AnimalCGLIBProxyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/test/chapter_03_springAOP/com_niit_staticProxy/AnimalJDKProxyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/test/chapter_03_springAOP/com_niit_staticProxy/AnimalStaticProxyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/test/com_junit/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/test/com_junit/Test_Junit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/test/com_junit/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/test/com_junit/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/test/com_junit/UserServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/test/com_junit/beans.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/web/WEB-INF/lib/aopalliance-1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/web/WEB-INF/lib/aspectjrt-1.9.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/web/WEB-INF/lib/aspectjweaver-1.8.10.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/web/WEB-INF/lib/commons-dbcp-1.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/web/WEB-INF/lib/commons-logging-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/web/WEB-INF/lib/commons-pool-1.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/web/WEB-INF/lib/druid-1.1.12-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/web/WEB-INF/lib/druid-1.1.12.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/web/WEB-INF/lib/hamcrest-core-1.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/web/WEB-INF/lib/junit-4.10.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/web/WEB-INF/lib/junit-4.12-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/web/WEB-INF/lib/log4j-1.2.17.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/web/WEB-INF/lib/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/web/WEB-INF/lib/lombok-1.18.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/web/WEB-INF/lib/mysql-connector-java-5.1.18-bin.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/web/WEB-INF/lib/slf4j-api-1.7.25.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/web/WEB-INF/lib/slf4j-log4j12-1.7.25.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/web/WEB-INF/lib/spring-aop-5.1.5.RELEASE-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/web/WEB-INF/lib/spring-aop-5.1.5.RELEASE-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/web/WEB-INF/lib/spring-aop-5.1.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/web/WEB-INF/lib/spring-aspects-5.1.5.RELEASE-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/web/WEB-INF/lib/spring-aspects-5.1.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/web/WEB-INF/lib/spring-beans-5.1.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/web/WEB-INF/lib/spring-context-5.1.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/web/WEB-INF/lib/spring-core-5.1.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/web/WEB-INF/lib/spring-expression-5.1.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/web/WEB-INF/lib/spring-jdbc-5.1.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringDemo/web/WEB-INF/lib/spring-test-5.1.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC2/.idea/artifacts/SpringMVC2_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC2/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC2/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC2/.idea/libraries/Spring_MVC.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC2/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC2/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC2/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC2/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC2/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC2/SpringMVC2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC2/src/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC2/src/com/ithemima/controller/FirstController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC2/src/com/ithemima/controller/ImgUploadController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC2/src/com/ithemima/controller/SecondController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC2/src/com/ithemima/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC2/src/com/ithemima/controller/fileDownload.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC2/src/com/ithemima/interceptor/Interceptop2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC2/src/com/ithemima/interceptor/Interceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC2/src/com/ithemima/interceptor/LoginInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC2/src/com/ithemima/po/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC2/src/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC2/src/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC2/web/ImgUploadTest.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC2/web/WEB-INF/jsp/download.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC2/web/WEB-INF/jsp/error.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC2/web/WEB-INF/jsp/first.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC2/web/WEB-INF/jsp/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC2/web/WEB-INF/jsp/main.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC2/web/WEB-INF/jsp/second.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC2/web/WEB-INF/jsp/showImg.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC2/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC2/web/upload/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC2/web/upload/timg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC_dataBinding/.idea/artifacts/SpringMVC_dataBinding_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC_dataBinding/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC_dataBinding/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC_dataBinding/.idea/libraries/Spring_MVC.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC_dataBinding/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC_dataBinding/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC_dataBinding/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC_dataBinding/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC_dataBinding/SpringMVC_dataBinding.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC_dataBinding/src/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC_dataBinding/src/com/itheima/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC_dataBinding/src/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC_dataBinding/src/springmvc-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC_dataBinding/web/WEB-INF/jsp/success.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMVC_dataBinding/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringTest/src/com_annotation/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ajax_2019/.idea/artifacts/ajax_2019_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ajax_2019/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ajax_2019/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ajax_2019/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ajax_2019/.idea/libraries/ajax_2019.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ajax_2019/.idea/libraries/servlet_api.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ajax_2019/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ajax_2019/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ajax_2019/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ajax_2019/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ajax_2019/ajax_2019.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ajax_2019/web/WEB-INF/lib/mysql-connector-java-8.0.12.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ajax_2019/web/WEB-INF/lib/servlet-api.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ajax_2019/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ajax_2019/web/demo2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ajax_2019/web/get2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ajax_2019/web/getOut.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ajax_2019/web/student/get3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ajax_2019/web/student/stuData.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ajax_2019/web/student/student.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ajax_2019/web/test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ajax_2019/web/weather/weather.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ajax_2019/web/weather/weather_data.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jQueryAjax/.idea/artifacts/jQueryAjax_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jQueryAjax/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jQueryAjax/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jQueryAjax/.idea/libraries/druid_1_1_14.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jQueryAjax/.idea/libraries/jQueryAjax.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jQueryAjax/.idea/libraries/mysql_connector_java_5_1_18_bin.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jQueryAjax/.idea/libraries/spring_aop_5_1_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jQueryAjax/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jQueryAjax/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jQueryAjax/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jQueryAjax/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jQueryAjax/jQueryAjax.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jQueryAjax/src/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jQueryAjax/src/jdbc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jQueryAjax/src/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jQueryAjax/src/rebel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jQueryAjax/web/WEB-INF/lib/aopalliance-1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jQueryAjax/web/WEB-INF/lib/aspectjrt-1.9.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jQueryAjax/web/WEB-INF/lib/aspectjweaver-1.9.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jQueryAjax/web/WEB-INF/lib/commons-fileupload-1.3.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jQueryAjax/web/WEB-INF/lib/commons-io-2.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jQueryAjax/web/WEB-INF/lib/commons-logging-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jQueryAjax/web/WEB-INF/lib/druid-1.1.14.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jQueryAjax/web/WEB-INF/lib/fastjson-1.2.58.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jQueryAjax/web/WEB-INF/lib/hamcrest-core-1.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jQueryAjax/web/WEB-INF/lib/jackson-annotations-2.9.8.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jQueryAjax/web/WEB-INF/lib/jackson-core-2.9.8.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jQueryAjax/web/WEB-INF/lib/jackson-databind-2.9.8.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jQueryAjax/web/WEB-INF/lib/jackson-mapper-asl-1.9.13.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jQueryAjax/web/WEB-INF/lib/junit-4.10.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jQueryAjax/web/WEB-INF/lib/junit-4.12-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jQueryAjax/web/WEB-INF/lib/junit-4.12.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jQueryAjax/web/WEB-INF/lib/log4j-1.2.17.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jQueryAjax/web/WEB-INF/lib/lombok-1.18.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jQueryAjax/web/WEB-INF/lib/lombok-1.18.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jQueryAjax/web/WEB-INF/lib/mapper-4.1.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jQueryAjax/web/WEB-INF/lib/mybatis-3.5.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jQueryAjax/web/WEB-INF/lib/mybatis-spring-2.0.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jQueryAjax/web/WEB-INF/lib/mysql-connector-java-5.1.18-bin.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jQueryAjax/web/WEB-INF/lib/mysql-connector-java-6.0.5-bin.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jQueryAjax/web/WEB-INF/lib/persistence-api-1.0.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jQueryAjax/web/WEB-INF/lib/servlet-api.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jQueryAjax/web/WEB-INF/lib/slf4j-api-1.7.25.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jQueryAjax/web/WEB-INF/lib/slf4j-log4j12-1.7.25.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jQueryAjax/web/WEB-INF/lib/spring-aop-5.1.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jQueryAjax/web/WEB-INF/lib/spring-aspects-5.1.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jQueryAjax/web/WEB-INF/lib/spring-beans-5.1.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jQueryAjax/web/WEB-INF/lib/spring-context-5.1.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jQueryAjax/web/WEB-INF/lib/spring-context-support-5.1.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jQueryAjax/web/WEB-INF/lib/spring-core-5.1.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jQueryAjax/web/WEB-INF/lib/spring-expression-5.1.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jQueryAjax/web/WEB-INF/lib/spring-instrument-5.1.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jQueryAjax/web/WEB-INF/lib/spring-jcl-5.1.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jQueryAjax/web/WEB-INF/lib/spring-jdbc-5.1.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jQueryAjax/web/WEB-INF/lib/spring-jms-5.1.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jQueryAjax/web/WEB-INF/lib/spring-orm-5.1.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jQueryAjax/web/WEB-INF/lib/spring-test-5.1.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jQueryAjax/web/WEB-INF/lib/spring-tx-5.1.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jQueryAjax/web/WEB-INF/lib/spring-web-5.1.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jQueryAjax/web/WEB-INF/lib/spring-webmvc-5.1.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jQueryAjax/web/WEB-INF/lib/taglibs-standard-compat-1.2.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jQueryAjax/web/WEB-INF/lib/taglibs-standard-impl-1.2.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jQueryAjax/web/WEB-INF/lib/taglibs-standard-jstlel-1.2.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jQueryAjax/web/WEB-INF/lib/taglibs-standard-spec-1.2.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jQueryAjax/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jQueryAjax/web/student/d.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jQueryAjax/web/student/stuData.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jQueryAjax/web/student/student.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/Hello.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/first.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/first2.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javaWeb/web/first3.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myAOPDemo/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myAOPDemo/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myAOPDemo/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myAOPDemo/.idea/myAOPDemo.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myAOPDemo/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myAOPDemo/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mySpringMVC/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mySpringMVC/src/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mySpringMVC/src/com/niit/controller/FirstController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mySpringMVC/src/com/niit/controller/SecondController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mySpringMVC/src/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mySpringMVC/src/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mySpringMVC/web/WEB-INF/jsp/first.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springJDBC/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springJDBC/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springJDBC/src/JDBC" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springJDBC/src/TransactionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springJDBC/src/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springJDBC/src/chapter03/Dao/Animal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springJDBC/src/chapter03/Dao/AnimalImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springJDBC/src/chapter03/Dao/Point.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springJDBC/src/chapter03/Dao/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springJDBC/src/chapter03/application.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springJDBC/src/com/iteima/AccountDaoTest/AccountDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springJDBC/src/com/iteima/AccountDaoTest/AccountDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springJDBC/src/com/iteima/AccountDaoTest/TransactionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springJDBC/src/com/iteima/AccountDaoTest/addAccountTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springJDBC/src/com/iteima/AccountDaoTest/deleteAccountTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springJDBC/src/com/iteima/AccountDaoTest/updateAccountTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springJDBC/src/com/iteima/aspect/MyAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springJDBC/src/com/iteima/domain/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springJDBC/src/com/iteima/jdbc/JdbcTemplateTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springJDBC/src/com/iteima/jdk/Join.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springJDBC/src/com/iteima/jdk/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springJDBC/src/com/iteima/jdk/UserImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springJDBC/src/com/iteima/jdk/test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springJDBC/src/com/niit/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springJDBC/src/com/niit/daoImpl/UserDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springJDBC/src/com/niit/daoImpl/UserDaoImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springJDBC/src/com/niit/domain/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springJDBC/src/com/niit/mapper/UserRowMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springJDBC/src/jdbc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springJDBC/src/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springMyBatis/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springMyBatis/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springMyBatis/.idea/libraries/Spring.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springMyBatis/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springMyBatis/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springMyBatis/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springMyBatis/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springMyBatis/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springMyBatis/springMyBatis.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springMyBatis/src/com/niit/dao/AnimalDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springMyBatis/src/com/niit/dao/AnimalDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springMyBatis/src/com/niit/dao/CustomerDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springMyBatis/src/com/niit/dao/CustomerDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springMyBatis/src/com/niit/dao/IdCardDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springMyBatis/src/com/niit/dao/IdCardDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springMyBatis/src/com/niit/dao/OrderDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springMyBatis/src/com/niit/dao/OrderDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springMyBatis/src/com/niit/dao/PersonDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springMyBatis/src/com/niit/dao/PersonDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springMyBatis/src/com/niit/dao/TestAnimal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springMyBatis/src/com/niit/dao/TestCustomer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springMyBatis/src/com/niit/dao/TestIdCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springMyBatis/src/com/niit/dao/TestOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springMyBatis/src/com/niit/dao/TestPerson.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springMyBatis/src/com/niit/dao/TestUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springMyBatis/src/com/niit/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springMyBatis/src/com/niit/dao/UserDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springMyBatis/src/com/niit/domain/Animal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springMyBatis/src/com/niit/domain/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springMyBatis/src/com/niit/domain/IdCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springMyBatis/src/com/niit/domain/Orders.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springMyBatis/src/com/niit/domain/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springMyBatis/src/com/niit/domain/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springMyBatis/src/com/niit/domain/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springMyBatis/src/com/niit/mapper/AnimalMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springMyBatis/src/com/niit/mapper/CustomerMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springMyBatis/src/com/niit/mapper/IdCardMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springMyBatis/src/com/niit/mapper/OrderMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springMyBatis/src/com/niit/mapper/PersonMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springMyBatis/src/com/niit/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springMyBatis/src/com/niit/util/MyBatisUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springMyBatis/src/jdbc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springMyBatis/src/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springMyBatis/src/myBatis" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springMyBatis/src/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Spring.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springMyBatisDemo(SSM).iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MyBatis与Spring的整合" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/niit/dao/CustomerDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/niit/dao/CustomerDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/niit/domain/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/niit/mapper/CustomerMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/niit/service/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/niit/service/CustomerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jdbc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/com/niit/service/CustomerServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springReview/src/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springReview/src/beans.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springReview/src/chapter02/com/itheima/annotation/DaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springReview/src/chapter02/com/itheima/annotation/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springReview/src/chapter02/com/itheima/annotation/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springReview/src/chapter02/com/itheima/annotation/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springReview/src/chapter02/com/itheima/annotation/UserTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springReview/src/chapter03/itheima/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springReview/src/chapter03/itheima/aspect/MyAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springReview/src/chapter03/itheima/aspect/TestAnnotationAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springReview/src/chapter03/itheima/jdbc/JdbcTemplateTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springReview/src/chapter03/itheima/jdk/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springReview/src/chapter03/itheima/jdk/UserDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springReview/src/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="D:/JQuery_EE/JQueryDemo/chapter_01/even(偶数).html" afterDir="false" />
+      <change afterPath="D:/JQuery_EE/JQueryDemo/chapter_01/first.html" afterDir="false" />
+      <change afterPath="D:/JQuery_EE/JQueryDemo/chapter_01/hide(选取不同的p元素).html" afterDir="false" />
+      <change afterPath="D:/JQuery_EE/JQueryDemo/chapter_01/hide(隐藏所有元素).html" afterDir="false" />
+      <change afterPath="D:/JQuery_EE/JQueryDemo/chapter_01/hide.html" afterDir="false" />
+      <change afterPath="D:/JQuery_EE/JQueryDemo/chapter_01/hide2(#id选择器).html" afterDir="false" />
+      <change afterPath="D:/JQuery_EE/JQueryDemo/chapter_01/hide3(#.class选择器).html" afterDir="false" />
+      <change afterPath="D:/JQuery_EE/JQueryDemo/chapter_01/jQuery" afterDir="false" />
+      <change afterPath="D:/JQuery_EE/JQueryDemo/chapter_01/jquery-3.3.1.min.js" afterDir="false" />
+      <change afterPath="D:/JQuery_EE/JQueryDemo/chapter_02(选择器)/append(添加).html" afterDir="false" />
+      <change afterPath="D:/JQuery_EE/JQueryDemo/chapter_02(选择器)/checkbox(选择框).html" afterDir="false" />
+      <change afterPath="D:/JQuery_EE/JQueryDemo/chapter_02(选择器)/clone.html" afterDir="false" />
+      <change afterPath="D:/JQuery_EE/JQueryDemo/chapter_02(选择器)/css（add、rem、tog）.html" afterDir="false" />
+      <change afterPath="D:/JQuery_EE/JQueryDemo/chapter_02(选择器)/css（方法）.html" afterDir="false" />
+      <change afterPath="D:/JQuery_EE/JQueryDemo/chapter_02(选择器)/li(轮播).html" afterDir="false" />
+      <change afterPath="D:/JQuery_EE/JQueryDemo/chapter_02(选择器)/prop_attr.html" afterDir="false" />
+      <change afterPath="D:/JQuery_EE/JQueryDemo/chapter_02(选择器)/remove(删除元素).html" afterDir="false" />
+      <change afterPath="D:/JQuery_EE/JQueryDemo/chapter_02(选择器)/text_html_val(回调函数).html" afterDir="false" />
+      <change afterPath="D:/JQuery_EE/JQueryDemo/chapter_03(效果)/Untitled Document.html" afterDir="false" />
+      <change afterPath="D:/JQuery_EE/JQueryDemo/chapter_03(效果)/Untitled Document1.html" afterDir="false" />
+      <change afterPath="D:/JQuery_EE/JQueryDemo/chapter_03(效果)/focus(邮箱).html" afterDir="false" />
+      <change afterPath="D:/JQuery_EE/JQueryDemo/chapter_03(效果)/hide(),show().html" afterDir="false" />
+      <change afterPath="D:/JQuery_EE/JQueryDemo/chapter_03(效果)/img/0.jpg" afterDir="false" />
+      <change afterPath="D:/JQuery_EE/JQueryDemo/chapter_03(效果)/img/1.jpg" afterDir="false" />
+      <change afterPath="D:/JQuery_EE/JQueryDemo/chapter_03(效果)/img/2.jpg" afterDir="false" />
+      <change afterPath="D:/JQuery_EE/JQueryDemo/chapter_03(效果)/img/3.jpg" afterDir="false" />
+      <change afterPath="D:/JQuery_EE/JQueryDemo/chapter_03(效果)/toggle(切换hide和show).html" afterDir="false" />
+      <change afterPath="D:/JQuery_EE/JQueryDemo/chapter_03(效果)/返回顶部按钮.html" afterDir="false" />
+      <change afterPath="D:/JQuery_EE/JQueryDemo/chapter_04(事件和动画)/animate.html" afterDir="false" />
+      <change afterPath="D:/JQuery_EE/JQueryDemo/chapter_04(事件和动画)/key.html" afterDir="false" />
+      <change afterPath="D:/JQuery_EE/JQueryDemo/chapter_04(事件和动画)/mouse-over.html" afterDir="false" />
+      <change afterPath="D:/JQuery_EE/JQueryDemo/chapter_04(事件和动画)/打字机.html" afterDir="false" />
+      <change afterPath="D:/JQuery_EE/JQueryDemo/chapter_05(表单、表格的应用)/changdeshiqiang.html" afterDir="false" />
+      <change afterPath="D:/JQuery_EE/JQueryDemo/chapter_05(表单、表格的应用)/fieldset.html" afterDir="false" />
+      <change afterPath="D:/JQuery_EE/JQueryDemo/chapter_05(表单、表格的应用)/font-size.html" afterDir="false" />
+      <change afterPath="D:/JQuery_EE/JQueryDemo/jQuery" afterDir="false" />
+      <change afterPath="D:/JQuery_EE/JQueryDemo/work/work_(基本和层次选择器)/jquery-3.3.1.min.js" afterDir="false" />
+      <change afterPath="D:/JQuery_EE/JQueryDemo/work/work_(基本和层次选择器)/work01.html" afterDir="false" />
+      <change afterPath="D:/JQuery_EE/JQueryDemo/work/work_(基本和层次选择器)/work02.html" afterDir="false" />
+      <change afterPath="D:/JQuery_EE/JQueryDemo/work/work_(基本和层次选择器)/work03.html" afterDir="false" />
+      <change afterPath="D:/JQuery_EE/JQueryDemo/work/work_02/attr(输出值的总和).html" afterDir="false" />
+      <change afterPath="D:/JQuery_EE/JQueryDemo/work/work_02/attr_02.html" afterDir="false" />
+      <change afterPath="D:/JQuery_EE/JQueryDemo/work/work_02/font-size.html" afterDir="false" />
+      <change afterPath="D:/JQuery_EE/JQueryDemo/work/work_02/表单属性过滤器.html" afterDir="false" />
+      <change afterPath="D:/JQuery_EE/JQueryDemo/work/work_03(图书馆导航）/work_03(图书分类).html" afterDir="false" />
+      <change afterPath="D:/JQuery_EE/JQueryDemo/work/work_03(图书馆导航）/work_03.html" afterDir="false" />
+      <change afterPath="D:/JQuery_EE/JQueryDemo/work/work_04/1.jpg" afterDir="false" />
+      <change afterPath="D:/JQuery_EE/JQueryDemo/work/work_04/2.jpg" afterDir="false" />
+      <change afterPath="D:/JQuery_EE/JQueryDemo/work/work_04/3.jpg" afterDir="false" />
+      <change afterPath="D:/JQuery_EE/JQueryDemo/work/work_04/4.jpg" afterDir="false" />
+      <change afterPath="D:/JQuery_EE/JQueryDemo/work/work_04/weibo.html" afterDir="false" />
+      <change afterPath="D:/JQuery_EE/JQueryDemo/数字雨/数字雨.html" afterDir="false" />
+      <change afterPath="D:/JQuery_EE/JQueryDemo/滑块验证/hello.html" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/applicationContext.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="594">
+              <caret line="53" selection-start-line="53" selection-end-line="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/niit/dao/CustomerDaoImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/niit/mapper/CustomerMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1900">
+              <caret line="87" column="9" lean-forward="true" selection-start-line="87" selection-start-column="9" selection-end-line="87" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/niit/service/CustomerService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/niit/service/CustomerServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="600">
+              <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/com/niit/service/CustomerServiceImplTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="13" column="49" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/jdbc.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/log4j.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="540">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MyBatis与Spring的整合">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="spring-beans.schema" />
+        <option value="Class" />
+        <option value="JUnit4 Test Class" />
+        <option value="mapper" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="D:/" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/com/niit/domain/Customer.java" />
+        <option value="$PROJECT_DIR$/src/com/niit/dao/CustomerDao.java" />
+        <option value="$PROJECT_DIR$/src/com/niit/mapper/CustomerMapper.xml" />
+        <option value="$PROJECT_DIR$/src/com/niit/service/CustomerService.java" />
+        <option value="$PROJECT_DIR$/src/com/niit/dao/CustomerDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/niit/service/CustomerServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/jdbc.properties" />
+        <option value="$PROJECT_DIR$/test/com/niit/service/CustomerServiceImplTest.java" />
+        <option value="$PROJECT_DIR$/src/applicationContext.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="337" />
+    <option name="y" value="55" />
+    <option name="width" value="1460" />
+    <option name="height" value="695" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="springMyBatisDemo(SSM)" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springMyBatisDemo(SSM)" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springMyBatisDemo(SSM)" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springMyBatisDemo(SSM)" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springMyBatisDemo(SSM)" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springMyBatisDemo(SSM)" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springMyBatisDemo(SSM)" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springMyBatisDemo(SSM)" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="niit" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springMyBatisDemo(SSM)" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springMyBatisDemo(SSM)" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="niit" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springMyBatisDemo(SSM)" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springMyBatisDemo(SSM)" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="niit" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springMyBatisDemo(SSM)" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springMyBatisDemo(SSM)" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="niit" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springMyBatisDemo(SSM)" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springMyBatisDemo(SSM)" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="niit" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springMyBatisDemo(SSM)" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springMyBatisDemo(SSM)" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springMyBatisDemo(SSM)" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springMyBatisDemo(SSM)" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springMyBatisDemo(SSM)" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springMyBatisDemo(SSM)" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="niit" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springMyBatisDemo(SSM)" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springMyBatisDemo(SSM)" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="niit" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springMyBatisDemo(SSM)" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="springMyBatisDemo(SSM)" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Spring" type="70bed36:NamedLibraryElementNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557925200476" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="last_opened_file_path" value="D:/OpenSources/jarPackage/springJar/SSM2/SSM/taglibs-standard-spec-1.2.5.jar!/" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.18066406" />
+    <property name="project.structure.side.proportion" value="0.19188921" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.niit.service" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\JAVA_EE\springMyBatisDemo(SSM)\src" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="CustomerServiceImplTest.insertCustomer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springMyBatisDemo(SSM)" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.niit.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.niit.service" />
+      <option name="MAIN_CLASS_NAME" value="com.niit.service.CustomerServiceImplTest" />
+      <option name="METHOD_NAME" value="insertCustomer" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.CustomerServiceImplTest.insertCustomer" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="StructureViewFactory">
+    <option name="ACTIVE_ACTIONS" value=",SHOW_PROPERTIES" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5877e1a0-4a5f-445a-af0c-0a408650713b" name="Default Changelist" comment="" />
+      <created>1555287628896</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1555287628896</updated>
+      <workItem from="1555287631364" duration="9140000" />
+      <workItem from="1555460592424" duration="599000" />
+      <workItem from="1555665842771" duration="2590000" />
+      <workItem from="1555733857213" duration="597000" />
+      <workItem from="1556001601080" duration="1213000" />
+      <workItem from="1557536846636" duration="2209000" />
+      <workItem from="1557636360775" duration="2649000" />
+      <workItem from="1557887286959" duration="2368000" />
+      <workItem from="1557925241118" duration="1000" />
+      <workItem from="1558632498381" duration="38000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="CustomerServiceImplTest_insertCustomer - 2019.04.15 at 09h 41m 17s.xml">
+      <configuration name="CustomerServiceImplTest.insertCustomer" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CustomerServiceImplTest_insertCustomer - 2019.04.15 at 09h 43m 45s.xml">
+      <configuration name="CustomerServiceImplTest.insertCustomer" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CustomerServiceImplTest_insertCustomer - 2019.04.15 at 09h 53m 29s.xml">
+      <configuration name="CustomerServiceImplTest.insertCustomer" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CustomerServiceImplTest_insertCustomer - 2019.04.15 at 10h 02m 50s.xml">
+      <configuration name="CustomerServiceImplTest.insertCustomer" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CustomerServiceImplTest_insertCustomer - 2019.04.15 at 10h 02m 51s.xml">
+      <configuration name="CustomerServiceImplTest.insertCustomer" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CustomerServiceImplTest_insertCustomer - 2019.04.15 at 10h 11m 44s.xml">
+      <configuration name="CustomerServiceImplTest.insertCustomer" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CustomerServiceImplTest_insertCustomer - 2019.04.15 at 11h 08m 55s.xml">
+      <configuration name="CustomerServiceImplTest.insertCustomer" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CustomerServiceImplTest_insertCustomer - 2019.04.19 at 17h 26m 29s.xml">
+      <configuration name="CustomerServiceImplTest.insertCustomer" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="21404000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.82102275" visible="true" weight="0.20442708" />
+      <window_info id="Structure" order="1" sideWeight="0.17897727" side_tool="true" visible="true" weight="0.20442708" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="JRebel" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.0" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="bottom" id="JRebel Console" order="14" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/com/niit/domain/Customer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/niit/dao/CustomerDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/l.xml" />
+    <entry file="file://$PROJECT_DIR$/src/com/niit/dao/CustomerDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/niit/service/CustomerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/niit/service/CustomerServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/niit/service/CustomerServiceImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="13" column="49" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MyBatis与Spring的整合">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/niit/mapper/CustomerMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1900">
+          <caret line="87" column="9" lean-forward="true" selection-start-line="87" selection-start-column="9" selection-end-line="87" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jdbc.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>springMyBatisDemo(SSM)</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.19188921" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.19188921" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

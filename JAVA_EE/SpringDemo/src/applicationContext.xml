@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+    <!-- 指定需要扫描的包，使注解生效-->
+    <context:component-scan base-package="work.concert" />
+    <!--启动基于注解的声明式AspectJ支持-->
+    <aop:aspectj-autoproxy></aop:aspectj-autoproxy>
+
+    <bean id="hello" class="chapter_03_springAOP.com_niit_aop.HelloImpl" />
+    <bean id="myBefore" class="chapter_03_springAOP.com_niit_aop.MyBeforAdvice" />
+
+    <aop:config>
+        <!--配置切面-->
+        <aop:aspect id="befor" ref="myBefore">
+            <!--配置切入点-->
+            <aop:pointcut id="myPointCut"
+                          expression="execution(* chapter_03_springAOP.com_niit_aop.*.*(..))" />
+            <!--前置增强-->
+            <aop:before method="beforMethod" pointcut-ref="myPointCut" />
+        </aop:aspect>
+    </aop:config>
+
+    <!--========================================================-->
+    <!--创建目标类-->
+    <bean id="target" class="work.com.niit.AOP.NativeWaiter" />
+    <!--切面类1.-->
+    <bean id="beforeAdvice" class="work.com.niit.AOP.GreetBeforeAdvice" />
+    <!--切面类2.-->
+    <bean id="afterAdvice" class="work.com.niit.AOP.GreetAfterAdvice" />
+    <!--切面类3.-->
+    <bean id="aroundAdvice" class="work.com.niit.AOP.GreeAroundAdvice" />
+
+    <!--创建代理对象-->
+    <bean id="proxy" class="org.springframework.aop.framework.ProxyFactoryBean">
+        <!--目标类对象-->
+        <property name="target" ref="target" />
+
+        <!--目标类对象所包含的接口-->
+        <property name="proxyInterfaces" value="work.com.niit.AOP.Waiter" />
+
+        <!--织入切面-->
+        <property name="interceptorNames"
+        value="beforeAdvice,aroundAdvice,afterAdvice" />
+
+        <!-- 织入的方式 -->
+        <property name="proxyTargetClass" value="false"/>
+    </bean>
+
+
+<!--==========================================================GreetingAdvice-->
+    <!--配置目标类-->
+    <bean id="waiter" class="work.com.niit.AOP.NativeWaiter"  />
+        <!--配置切面-->
+    <bean id="myAdvice" class="work.com.niit.AOP.GreetingAdvice" scope="prototype" />
+
+    <!--AOP配置-->
+    <aop:config>
+        <aop:aspect id="advice" ref="myAdvice">
+        <!--切点-->
+        <aop:pointcut id="myPointCut" expression="execution(* work.com.niit.AOP.*.*(..))" />
+
+            <aop:before method="before" pointcut-ref="myPointCut" />
+
+            <aop:after-returning method="after" pointcut-ref="myPointCut" />
+
+            <aop:after-throwing method="afterThrowing" pointcut-ref="myPointCut"
+            throwing="e" />
+
+            <aop:after method="myFinal" pointcut-ref="myPointCut" />
+        </aop:aspect>
+    </aop:config>
+
+    <!--================================concert-->
+
+    <!--定义目标-->
+    <bean id="perfor3" class="work.concert.performanceImpl" />
+    <!--定义切面-->
+    <bean id="myAudience" class="work.concert.Audience" />
+    <!--AOP编程-->
+    <aop:config>
+        <!--配置切面 ,id切面的唯一标识符-->
+        <aop:aspect id="conAspect" ref="myAudience">
+            <!--配置切入点，切入点指的是类或方法名-->
+            <aop:pointcut id="myPointCut3" expression="execution(* work.concert.*.*(..))" />
+            <!--前置通知-->
+            <aop:before method="before3" pointcut-ref="myPointCut3" />
+            <!--后置通知-->
+            <aop:after-returning method="after3" pointcut-ref="myPointCut3"/>
+            <!--环绕通知-->
+            <aop:around method="round3" pointcut-ref="myPointCut3" />
+            <!--异常通知-->
+            <aop:after-throwing method="afterThrowing3" pointcut-ref="myPointCut3"
+            throwing="e" />
+            <!--最终通知-->
+            <aop:after method="myFinal" pointcut-ref="myPointCut3" />
+        </aop:aspect>
+    </aop:config>
+
+
+    <!--======================JDBC-->
+<bean id="user" class="work.JDBC.UserDaoImpl" />
+    <bean id="insertAspect" class="work.JDBC.InsertPoint" />
+<!--AOP配置-->
+    <aop:config>
+        <!--配置切面-->
+        <aop:aspect ref="insertAspect">
+            <!--配置切入点-->
+            <aop:pointcut id="InsertPoint" expression="execution(* work.JDBC.*.*(..))" />
+            <!--前置-->
+            <aop:before method="InsertBefore" pointcut-ref="InsertPoint" />
+            <!--后置-->
+            <aop:after method="InsertAfterReturning" pointcut-ref="InsertPoint" />
+            <!--环绕-->
+            <aop:around method="InsertAround" pointcut-ref="InsertPoint"/>
+        </aop:aspect>
+    </aop:config>
+</beans>

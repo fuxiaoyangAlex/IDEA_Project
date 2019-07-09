@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        $(function () {
+            $("#send").click(function () {
+               $.get("get3.jsp",function () {
+                   username:$("#username").val();
+                   content:$("#content").val()
+               },function (data) {
+                   var username=data.username;
+                   var content = data.content;
+                   $("#resText").html("<comment>"+username+"<p class='para'>"+content+"+</p></comment>")
+               },"json")
+            })
+        })
+    </script>
+</head>
+<body>
+<form id="form1">
+    <p>评论</p>
+    <input type="text" id="username" name="username"><br>
+    <input type="text" id="content" name="content"><br>
+</form>
+</body>
+</html>
